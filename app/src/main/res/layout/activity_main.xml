@@ -3,23 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="4"
     android:background="@drawable/background"
+    android:columnCount="4"
     android:rowCount="5"
     android:useDefaultMargins="true"
-
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/symbol_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:gravity="start|center"
+        android:textColor="#0100ca"
+        android:textSize="18sp" />
 
-        android:layout_columnSpan="4"
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="3"
         android:layout_columnWeight="4"
         android:layout_marginTop="24dp"
         android:gravity="center|end"
         android:hint="@string/result"
+        android:text="@string/initial_result"
+        android:textColor="#0100ca"
         android:textSize="36sp" />
 
     <Button
@@ -63,30 +75,30 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/key_1"
+        android:id="@+id/key_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="@string/key_1"
+        android:text="@string/key_7"
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/key_2"
+        android:id="@+id/key_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="@string/key_2"
+        android:text="@string/key_8"
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/key_3"
+        android:id="@+id/key_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="@string/key_3"
+        android:text="@string/key_9"
         android:textSize="30sp" />
 
     <Button
@@ -137,30 +149,30 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/key_7"
+        android:id="@+id/key_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="@string/key_7"
+        android:text="@string/key_1"
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/key_8"
+        android:id="@+id/key_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="@string/key_8"
+        android:text="@string/key_2"
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/key_9"
+        android:id="@+id/key_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="@string/key_9"
+        android:text="@string/key_3"
         android:textSize="30sp" />
 
     <Button
