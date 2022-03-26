@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/symbol_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnSpan="1"
         android:layout_columnWeight="1"
@@ -22,11 +22,11 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnSpan="3"
-        android:layout_columnWeight="4"
+        android:layout_columnWeight="3"
         android:layout_marginTop="24dp"
         android:gravity="center|end"
         android:hint="@string/result"
@@ -36,8 +36,8 @@
 
     <Button
         android:id="@+id/key_clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -46,8 +46,8 @@
 
     <Button
         android:id="@+id/key_reverse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -56,8 +56,8 @@
 
     <Button
         android:id="@+id/key_percent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -66,8 +66,8 @@
 
     <Button
         android:id="@+id/key_del"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -76,8 +76,8 @@
 
     <Button
         android:id="@+id/key_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_7"
@@ -85,8 +85,8 @@
 
     <Button
         android:id="@+id/key_8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_8"
@@ -94,8 +94,8 @@
 
     <Button
         android:id="@+id/key_9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_9"
@@ -103,8 +103,8 @@
 
     <Button
         android:id="@+id/key_division"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -113,8 +113,8 @@
 
     <Button
         android:id="@+id/key_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_4"
@@ -122,8 +122,8 @@
 
     <Button
         android:id="@+id/key_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_5"
@@ -131,8 +131,8 @@
 
     <Button
         android:id="@+id/key_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_6"
@@ -140,8 +140,8 @@
 
     <Button
         android:id="@+id/key_multiplication"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -150,8 +150,8 @@
 
     <Button
         android:id="@+id/key_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_1"
@@ -159,8 +159,8 @@
 
     <Button
         android:id="@+id/key_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_2"
@@ -168,8 +168,8 @@
 
     <Button
         android:id="@+id/key_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_3"
@@ -177,8 +177,8 @@
 
     <Button
         android:id="@+id/key_minus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
@@ -187,8 +187,8 @@
 
     <Button
         android:id="@+id/key_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_0"
@@ -196,8 +196,8 @@
 
     <Button
         android:id="@+id/key_dot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:text="@string/key_dot"
@@ -205,8 +205,8 @@
 
     <Button
         android:id="@+id/key_eq"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#f50057"
@@ -215,8 +215,8 @@
 
     <Button
         android:id="@+id/key_plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:backgroundTint="#0100ca"
