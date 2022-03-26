@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/r3dru/Repositories/Calculator/app/src/main/res/drawable/background.xml" value="0.209" />
-        <entry key="..\:/Users/r3dru/Repositories/Calculator/app/src/main/res/layout/activity_main.xml" value="0.3508541392904074" />
+        <entry key="..\:/Users/r3dru/Repositories/Calculator/app/src/main/res/layout-land/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/r3dru/Repositories/Calculator/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
