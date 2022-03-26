@@ -1,11 +1,9 @@
 package ru.eababurin.calculator;
 
-import android.util.Log;
 
 public class Calculator {
     private String textIndicator = "0";
     private String symbol = "";
-
     private double firstVariable = 0;
     private double secondVariable = 0;
     private double result = 0;
@@ -20,6 +18,10 @@ public class Calculator {
 
     protected String getSymbol() {
         return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
     }
 
     protected void appendKey(char value) {
@@ -53,7 +55,6 @@ public class Calculator {
 
     protected void calculate() {
         secondVariable = Double.parseDouble(textIndicator);
-        Log.d("test", "1 = " + firstVariable + " 2=" + secondVariable);
 
         switch (symbol) {
             case "+":
@@ -108,5 +109,29 @@ public class Calculator {
                 break;
         }
 
+    }
+
+    public double getFirstVariable() {
+        return firstVariable;
+    }
+
+    public void setFirstVariable(double firstVariable) {
+        this.firstVariable = firstVariable;
+    }
+
+    public double getSecondVariable() {
+        return secondVariable;
+    }
+
+    public void setSecondVariable(double secondVariable) {
+        this.secondVariable = secondVariable;
+    }
+
+    public double getResult() {
+        return result;
+    }
+
+    public void setResult(double result) {
+        this.result = result;
     }
 }

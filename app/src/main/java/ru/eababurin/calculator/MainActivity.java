@@ -1,9 +1,10 @@
 package ru.eababurin.calculator;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         TextView textIndicator = findViewById(R.id.result);
         textIndicator.setText(calculator.getTextIndicator());
 
-        View.OnClickListener clickListener = view -> {
+        if (savedInstanceState != null) {
+            calculator.setFirstVariable(savedInstanceState.getDouble("firstVariable"));
+            calculator.setSecondVariable(savedInstanceState.getDouble("secondVariable"));
+            calculator.setSymbol(savedInstanceState.getString("symbol"));
+            calculator.setResult(savedInstanceState.getDouble("result"));
+            textIndicator.setText(Double.toString(savedInstanceState.getDouble("lastValue")));
+        }
+
+        @SuppressLint("NonConstantResourceId") View.OnClickListener clickListener = view -> {
             switch (view.getId()) {
                 case R.id.key_1:
                     calculator.appendKey('1');
@@ -109,6 +118,17 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.key_plus).setOnClickListener(clickListener);
         findViewById(R.id.key_minus).setOnClickListener(clickListener);
         findViewById(R.id.key_eq).setOnClickListener(clickListener);
+    }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putDouble("firstVariable", calculator.getFirstVariable());
+        outState.putDouble("secondVariable", calculator.getSecondVariable());
+        outState.putDouble("result", calculator.getResult());
+        outState.putString("symbol", calculator.getSymbol());
+
+        TextView textIndicator = findViewById(R.id.result);
+        outState.putDouble("lastValue", Double.parseDouble((String) textIndicator.getText()));
     }
 }
