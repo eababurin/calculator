@@ -1,226 +1,324 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CalculatorStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     android:columnCount="4"
     android:rowCount="5"
     android:useDefaultMargins="true"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/symbol_text_view"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnSpan="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:fontFamily="sans-serif-light"
         android:gravity="start|center"
-        android:textColor="@color/color_textview"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
+        android:textColor="@color/white"
         android:textSize="@dimen/operation_text_size" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/result"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnSpan="@dimen/result_weight"
-        android:layout_columnWeight="@dimen/result_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="3"
         android:layout_marginTop="@dimen/margin_result"
+        android:fontFamily="sans-serif-light"
         android:gravity="center|end"
         android:hint="@string/result"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/initial_result"
-        android:textColor="@color/color_textview"
+        android:textColor="@color/white"
         android:textSize="@dimen/result_text_size" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_clear"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_clear"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_reverse"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_reverse"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_percent"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_percent"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_del"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_del"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_7"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_7"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_8"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_8"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_9"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_9"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_division"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_division"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_4"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_4"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_5"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_5"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_6"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_6"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_multiplication"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_multiplication"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_1"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_1"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_2"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_2"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_3"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_3"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_minus"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_minus"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_0"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_0"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_dot"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_dot"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_eq"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/result_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_eq"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/key_plus"
         android:layout_width="@dimen/layout_size"
         android:layout_height="@dimen/layout_size"
-        android:layout_rowWeight="@dimen/layout_weight"
-        android:layout_columnWeight="@dimen/layout_weight"
-        android:backgroundTint="@color/operation_button"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/shadow_radius"
         android:text="@string/key_plus"
-        android:textSize="@dimen/button_text_size" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="@dimen/buttons_corner" />
 
 </GridLayout>
