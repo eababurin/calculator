@@ -1,5 +1,7 @@
 package ru.eababurin.calculator;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -17,10 +19,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE);
-        int theme = sharedPreferences.getInt("THEME", AppCompatDelegate.MODE_NIGHT_NO);
-
-        if (Configuration.UI_MODE_NIGHT_YES == theme) {
+        SharedPreferences sharedPreferences = getSharedPreferences("THEME", Context.MODE_PRIVATE);
+        if (Configuration.UI_MODE_NIGHT_YES == sharedPreferences.getInt("THEME", AppCompatDelegate.MODE_NIGHT_NO)) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        SharedPreferences.Editor editor = sharedPreferences.edit();
 
         TextView symbolTextView = findViewById(R.id.symbol_text_view);
 
@@ -49,20 +47,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.key_clear).setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                // https://developer.android.com/guide/topics/ui/look-and-feel/darktheme#java
-                int currentMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
-
-                switch (currentMode) {
-                    case Configuration.UI_MODE_NIGHT_YES:
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                        editor.putInt("THEME", Configuration.UI_MODE_NIGHT_NO);
-                        break;
-                    case Configuration.UI_MODE_NIGHT_NO:
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                        editor.putInt("THEME", Configuration.UI_MODE_NIGHT_YES);
-                        break;
-                }
-                editor.commit();
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
                 return true;
             }
         });
