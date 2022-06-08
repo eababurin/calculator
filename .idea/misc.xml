@@ -5,9 +5,11 @@
       <map>
         <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/layout-land/activity_main.xml" value="0.3848958333333333" />
+        <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/layout-land/activity_settings.xml" value="0.44583333333333336" />
         <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/layout/activity_main1.xml" value="0.2962962962962963" />
+        <entry key="..\:/Users/babur/Repositories/calculator/app/src/main/res/layout/activity_settings.xml" value="0.18802083333333333" />
       </map>
     </option>
   </component>

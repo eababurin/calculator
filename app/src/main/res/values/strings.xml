@@ -25,4 +25,6 @@
 
     <string name="initial_result">0</string>
     <string name="result">Результаты.</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="change_theme">Сменить тему</string>
 </resources>
